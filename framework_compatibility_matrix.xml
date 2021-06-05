@@ -69,13 +69,30 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
+        <version>2.0</version>
         <version>3.0</version>
         <interface>
-            <name>IFingerprintNavigation</name>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <version>2.0</version>
+        <interface>
+            <name>IFingerprintEngineering</name>
             <instance>default</instance>
         </interface>
         <interface>
-            <name>IFingerprintSensorTest</name>
+            <name>IFingerprintOptical</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <version>3.0</version>
+        <interface>
+            <name>IFingerprintNavigation</name>
             <instance>default</instance>
         </interface>
     </hal>
