@@ -210,6 +210,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti
+
+PRODUCT_PACKAGES += \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    liblocation_api
+
+PRODUCT_PACKAGES += \
+    flp.conf \
+    gnss_antenna_info.conf \
+    gps.conf
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
