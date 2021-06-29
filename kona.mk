@@ -260,6 +260,13 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Kernel modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.insmod.qcom.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.qcom.cfg
+
+PRODUCT_COPY_FILES += \
+    hardware/google/pixel/common/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_kona
