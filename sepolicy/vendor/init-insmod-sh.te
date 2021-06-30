@@ -12,8 +12,8 @@ allow init-insmod-sh kernel:key search;
 allow init-insmod-sh self:capability sys_nice;
 allow init-insmod-sh kernel:process setsched;
 
-# modprobe need proc_modules
-allow init-insmod-sh proc_modules:file r_file_perms;
+# modprobe need proc_cmdline and proc_modules
+allow init-insmod-sh { proc_cmdline proc_modules }:file r_file_perms;
 
 # Set the vendor.all.modules.ready property
 set_prop(init-insmod-sh, vendor_device_prop)
