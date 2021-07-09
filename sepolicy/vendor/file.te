@@ -23,4 +23,5 @@ type persist_subsys_file, vendor_persist_type, file_type;
 type proc_last_kmsg, fs_type, proc_type;
 
 # kernel modules
+type vendor_incremental_module, vendor_file_type, file_type;
 type vendor_kernel_modules, vendor_file_type, file_type;
