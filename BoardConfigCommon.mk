@@ -108,6 +108,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += DTC_EXT=$(PWD)/prebuilts/misc/$(HOST_OS)-x86/d
 TARGET_KERNEL_ADDITIONAL_FLAGS += AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
+ifeq ($(HOST_OS),linux)
+TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/sdclang-12.0
+endif
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 
 # Kernel modules
